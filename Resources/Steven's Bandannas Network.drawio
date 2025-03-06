@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.0">
+  <diagram name="Page-1" id="gafW1Cdv1nZPGVfxVikd">
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-29" value="Office 3 Nat - 192.168.82.??" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#00CC00;" vertex="1" parent="1">
+          <mxGeometry x="649.9999999999999" y="630" width="410" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-22" value="Office 2 Nat - 192.168.81.??" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#00CC00;" vertex="1" parent="1">
+          <mxGeometry x="31.3" y="600" width="410" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#CC6600;strokeColor=#CC6600;" edge="1" parent="1" source="vQ3Rub2RQgKxTcBu8kzv-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-5" value="DMZ/NAT - 192.168.95.??" style="rounded=1;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;strokeColor=#CC6600;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="31.3" y="100" width="340" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-1" value="Tim&#39;s Workstation&lt;div&gt;192.168.81.34&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="60" y="663.8" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#009900;" edge="1" parent="1" source="crmYViip1QcHzVot3IbS-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-4" value="Office 2 - Master Router&lt;div&gt;GREEN IP: 192.168.81.1&lt;/div&gt;&lt;div&gt;RED IP: 192.168.8.150&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="196.3" y="450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-7" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Stephen&#39;s Bandannas Network&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Office 1 - Primary network for the main location&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;Business Office - accounting, marketing, payroll&lt;/li&gt;&lt;li&gt;DMZ - Main server room&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Office 2 - Warehouse and Blue bandanna plant&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;No direct network link to Office 1 - VPN connection over internet&lt;/li&gt;&lt;li&gt;No public hosted services (e.g. no DMZ)&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Office 3 - Manufacturing plant for Red Bandannas across town&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;VPN Link back to Office 1&lt;/li&gt;&lt;li&gt;No public hosted servers (e.g. no DMZ)&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;b&gt;Public Internet&lt;/b&gt; - Demo is using VirtualBox - which makes the physical machine (virtual host) part of the public internet. The classroom network is using 192.168.8.?? IP addresses, so 192.168.8.?? will be considered the &quot;Public Internet&quot; in this demo.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;NOTE - I tried to show the IPs assigned at the time of the demo, due to DHCP, they may change!&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;spacingLeft=4;spacingRight=4;horizontal=1;verticalAlign=top;labelBackgroundColor=none;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="820" y="20" width="320" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-8" value="File Server/AD server&lt;div&gt;192.168.95.20&lt;/div&gt;&lt;div&gt;Public ports - None&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="97.39999999999999" y="250" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-9" value="Web Server&lt;div&gt;192.168.95.5&lt;/div&gt;&lt;div&gt;Public ports - 80, 443&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="97.39999999999989" y="130" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="crmYViip1QcHzVot3IbS-10" target="crmYViip1QcHzVot3IbS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CC0000;" edge="1" parent="1" source="crmYViip1QcHzVot3IbS-10" target="crmYViip1QcHzVot3IbS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-10" value="Office 1 - Master Router&lt;div&gt;GREEN IP (NAT): 192.168.80.1&lt;/div&gt;&lt;div&gt;ORANGE IP (DMZ/NAT): 192.168.95.1&lt;/div&gt;&lt;div&gt;RED IP (WAN): 192.168.8.89&lt;br&gt;&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="520" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#009900;strokeColor=#009900;" edge="1" parent="1" source="crmYViip1QcHzVot3IbS-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-20" value="Office 3 - Master Router&lt;div&gt;GREEN IP: 192.168.82.1&lt;/div&gt;&lt;div&gt;RED IP: 192.168.8.160&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="770" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.792;entryY=0.806;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#a20025;strokeColor=#6F0000;" parent="1" source="crmYViip1QcHzVot3IbS-20" target="crmYViip1QcHzVot3IbS-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-24" value="Bob&#39;s Computer&lt;div&gt;192.168.82.7&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="695" y="680" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="crmYViip1QcHzVot3IbS-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Internet&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Public Internet IPs - 192.168.8.??&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;NOTE - Our public internet is 192.168.8.?? because that is our current WAN IPs due to our classroom network. Normally that would be the public IP from your internet provider&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;strokeColor=#CC0000;fillColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="300" y="350" width="395" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-7" value="&lt;div&gt;Database Server&lt;/div&gt;&lt;div&gt;192.168.95.10&lt;/div&gt;&lt;div&gt;Public ports - None&lt;br&gt;&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="249.99999999999991" y="130" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-9" value="&lt;div&gt;Email Server&lt;/div&gt;&lt;div&gt;192.168.95.30&lt;/div&gt;&lt;div&gt;Public Ports - 25, 26,110, 143,&lt;/div&gt;&lt;div&gt;&amp;nbsp;465, 993, 995&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="249.99999999999991" y="250" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-13" value="Office 1 Nat - 192.168.80.??" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#00CC00;" vertex="1" parent="1">
+          <mxGeometry x="380" y="10" width="410" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-14" value="Stephen&#39;s Computer&lt;div&gt;192.168.80.5&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="37.6" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-15" value="Linda&#39;s Computer&lt;div&gt;192.168.80.6&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="553.8" y="37.6" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-18" value="Barry&#39;s Computer&lt;div&gt;192.168.80.7&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="680" y="37.6" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.95;entryY=0.15;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#009900;" edge="1" parent="1" source="vQ3Rub2RQgKxTcBu8kzv-13" target="crmYViip1QcHzVot3IbS-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-23" value="Darlenes&#39;s Workstation&lt;div&gt;192.168.81.35&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="178.8" y="663.8" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-26" value="Shop Workstation&lt;div&gt;192.168.81.36&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="317.6" y="663.8" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.13;entryY=0.77;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#CC0000;" edge="1" parent="1" source="crmYViip1QcHzVot3IbS-4" target="crmYViip1QcHzVot3IbS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-30" value="Shop Computer 1&lt;div&gt;192.168.82.10&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="820" y="680" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="vQ3Rub2RQgKxTcBu8kzv-31" value="Shop Computer 2&lt;div&gt;192.168.82.11&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="948.8" y="680" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

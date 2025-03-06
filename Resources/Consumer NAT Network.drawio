@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="Fa7K9S_es5J0eBcG1pRg">
+    <mxGraphModel dx="1434" dy="1838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-1" value="File Server&lt;div&gt;10.1.1.5&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
+          <mxGeometry x="267.4" y="527.4" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-2" value="Workstation 1&lt;div&gt;10.1.1.22&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="110" y="519" width="62.400000000000006" height="62.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BYeEP3Ym98LShRV1ll7p-3" target="BYeEP3Ym98LShRV1ll7p-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="170" y="440" />
+              <mxPoint x="170" y="495" />
+              <mxPoint x="140" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BYeEP3Ym98LShRV1ll7p-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="440" />
+              <mxPoint x="310" y="480" />
+              <mxPoint x="290" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="BYeEP3Ym98LShRV1ll7p-3" target="BYeEP3Ym98LShRV1ll7p-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BYeEP3Ym98LShRV1ll7p-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="440" />
+              <mxPoint x="310" y="480" />
+              <mxPoint x="410" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-3" value="Router&lt;div&gt;LAN IP: 10.1.1.1&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="187.4" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Internet&lt;/font&gt;&lt;/b&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="-10" width="730" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-8" value="Public IP: 24.12.12.44" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="348" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Consumer NAT Network&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- 1 public IP - often dynamic (can change if router reboots)&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Super easy to setup&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Keep everything closed from the outside - don&#39;t open up ports to the internal network, or only open a few as needed - default locked down &quot;firewall&quot;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Great way to keep your house or small office secure from hackers&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- NOT great to host several servers - e.g. multiple websites would have to share 1 IP that could change if router reboots requiring DNS changes&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;spacingLeft=4;spacingRight=4;horizontal=1;verticalAlign=top;labelBackgroundColor=none;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="470" y="330" width="290" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="BYeEP3Ym98LShRV1ll7p-11" value="Web Server&lt;div&gt;10.1.1.6&lt;/div&gt;" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
+          <mxGeometry x="383.9999999999999" y="527" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
